@@ -1,0 +1,422 @@
+%Thanks to Daniel B. Pemstein for the template
+%Better because it doesn't require special format 
+%
+
+\documentclass[letterpaper,10pt]{article}
+\usepackage{amssymb}
+
+% Packages needed to underline and color hyperref
+\usepackage{xcolor,soul,lipsum}
+\usepackage[hidelinks]{hyperref}
+
+\newcommand{\BJLhref}[2]{\href{#1}{\color{blue}\setulcolor{blue}\ul{#2}}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%You can use these to shift entire document to center on page%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\voffset=-.55in %To compensate for header space.
+%\hoffset=-.05in %This differs from the results of layout.tex... Why? 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%General formatting of the page%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\oddsidemargin=-.3in %Start at left margin of 1 inch (default), move
+                      %this amount right from there and hoffset right.
+\textwidth=7.5in %This from above until the right side margin
+\topmargin=-.95in %Start at top margin of 1 inch (default), move this
+                 %amount down from there and voffset up.
+\textheight=10in %Distance from above until the bottom margin
+\paperheight=11.0in
+\paperwidth=9in
+\pagestyle{empty}
+\raggedright
+\raggedbottom
+
+%This is the spacing between each section on the resume
+\newcommand{\secspace}{7pt}
+
+\begin{document}
+
+%%Use this example to experiment with tabular environment's look
+% \begin{center}  % put inside center environment
+%  \begin{tabular*}{.96875\textwidth}%
+%     {@{\extracolsep{\fill}}lcll}
+%  label 1 & label 2 & label 3 & label 4 \\
+%  \hline  % put a line under headers
+%  item 1  & item 2  & item 3  & item 4  \\
+%  ...
+%  \end{tabular*}
+%  \end{center}
+
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+\huge{\textbf{\textsf{Brian J. Lopes, PhD}}} &
+\\
+\end{tabular*}
+
+\vspace{-2pt}
+
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}c
+    @{\extracolsep{\fill}}l} \hline \hline 
+4 Antonellis Cir. 
+&& email: \BJLhref{mailto:statmobile@gmail.com}{\texttt{statmobile@gmail.com}} 
+%\textbf{Home:}
+\\ Newton, MA  02459
+&& blog: \BJLhref{http://statmobile.blogspot.com}{http://statmobile.blogspot.com}
+\\
+mobile: (919) 923-1813 && 
+\end{tabular*}
+
+\vspace{\secspace}
+
+%%% %=========% %OBJECTIVE% %=========%
+%%% \begin{center} {\large \textbf{OBJECTIVE}}\\ \vspace{-10pt}{\centering
+%%% \rule{1\columnwidth}{0.2pt}\par}
+%%% \end{center}
+%%% \vspace{-2pt} 
+%%% 
+%%% A challenging full-time position in statistical research and
+%%% applications that builds on a unique combination of advanced
+%%% statistics and strong computational skills.
+
+%=========% %EDUCATION% %=========%
+\begin{center} {\large \textbf{EDUCATION}}\\ \vspace{-10pt}{\centering
+\rule{1\columnwidth}{0.2pt}\par}
+\end{center}
+\vspace{-2pt}
+
+{\em University of North Carolina at Chapel Hill}, Chapel Hill, NC
+\begin{list}{$\bullet$}{\itemsep -5pt \topsep -\parskip}
+\item Ph.D. in Statistics, August 2011
+\item Dissertation Topic: A Ridge Restricted Maximum Likelihood
+  Approach to Spatial Models - An approach to estimating the variance
+  component (spatial or other) when the design matrix is multicollinear.
+\item M.S. in Statistics, May 2007
+\end{list} 
+
+{\em University of Rochester}, Rochester, NY
+\begin{list}{$\bullet$}{\itemsep -5pt \topsep -\parskip}
+\item B.A. with Distinction in Statistics, June 1998
+\item B.A. in Economics, June 1998
+\item Actuarial Sciences Certificate, Minor in Latin American Studies
+\end{list} 
+
+%% {\em Universidad Nacional Aut\'onoma de Costa Rica},
+%% Heredia, Costa Rica
+%% \begin{list}{$\bullet$}{\itemsep -5pt \topsep -\parskip}
+%% \item Exchange Student, Spring Semester 1998
+%% \end{list} \vspace{4pt} 
+
+Sample Graduate Courses: Linear Models,
+Generalized Linear Models, Survival Analysis, Categorical Data, Time
+Series, Environmental Statistics, Sequential Analysis, Statistical
+Theory, Measure Theory, Probability Theory 
+
+%=========% %PROFESSIONAL HIGHLIGHTS% %=========%
+\begin{center} {\large \textbf{PROFESSIONAL HIGHLIGHTS}}\\ \vspace{-10pt}{\centering
+\rule{1\columnwidth}{0.2pt}\par}
+\end{center}
+\vspace{-2pt}
+
+\begin{list}{$\bullet$}{\itemsep -5pt \topsep -\parskip}
+\item Vibrant and enthusiastic personality, with a passion for sharing
+  his knowledge with others, and excited to expand on said background
+  from others.
+\item Combination of advanced training in statistical modeling and
+  strong interpersonal skills with experience in business and
+  accounting.
+\item Solid, rich background in various computer languages, and operating
+  systems, including software development and testing as well as
+  system administration.
+%\item Passionate to share computing knowledge, known to teach small
+%  computing tutorials to share with fellow graduate students.
+%\item Team player who is strongly self-motivated and detail-oriented
+\end{list}
+
+%===============% %PROFESSIONAL EXPERIENCE% %===============%
+\begin{center} {\large \textbf{PROFESSIONAL EXPERIENCE}}\\
+\vspace{-10pt}{\centering \rule{1\columnwidth}{0.2pt}\par}
+\end{center}
+\vspace{-2pt}
+
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+  \textbf{Freelance Statistician} & \textbf{Boston, MA} \\ 
+\emph{Statistical Consultant} &
+  February 2013 - \textit{Current}\\
+\end{tabular*}
+\begin{list}{$\bullet$}{\itemsep -5pt \topsep -\parskip}
+\item Tutoring undergraduate Statistics and Computer Science
+\item Python and R development specializing in cloud computing
+  deployment
+\item Statistical consulting for algorithm development, data science
+  and general computing
+\end{list}
+
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+  \textbf{Environmental Protection Agency (Consultant)} & \textbf{Boston, MA} \\ 
+\emph{Statistical Consultant} &
+  August 2011 \& December 2012\\
+\end{tabular*}
+\begin{list}{$\bullet$}{\itemsep -5pt \topsep -\parskip}
+\item Updated standard spreadsheet used for a consistent way of
+  estimating air material standards provided by manufacturers
+\item Implemented statistical tests for equivalence over
+  statistical tests for difference when comparing
+  measurements
+\item Tested and simulated results in order to release to public
+\end{list}
+
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+  \textbf{ChoiceStream, Inc.} & \textbf{Boston, MA} \\ 
+\emph{Statistician/Data Scientist} &
+  November 2011 - October 2012\\
+\end{tabular*}
+\begin{list}{$\bullet$}{\itemsep -5pt \topsep -\parskip}
+\item Software development in Python leveraging Django and NumPy
+  packages
+\item Designed and outlined integration of social networking
+  relationships within legacy recommendation engine
+\item Implemented various tracking software to monitor questionable
+  advertising media and overall system performance 
+\item Developed proprietary monthly Audience Cost Index calculation
+  for tracking media trends.  Using a tree structure
+\end{list}
+
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r} \textbf{IBM} & 
+\textbf{Cambridge, MA} \\ \emph{Senior Analytical Consultant} &
+August 2008-March 2010 \\
+\end{tabular*}
+\begin{list}{$\bullet$}{\itemsep -5pt \topsep -\parskip}
+\item Modeled marketing mix performance for US Software Group
+  Division and Sweden Marketing Division
+\item Derived methodology for tracking the number of
+  influential marketing touches done in a sale
+\item Evaluated saturation level for IBM events in Germany and UK
+  regions
+\item Conducted survey analysis on customer satisfaction
+\item Developed strategy for portfolio optimization
+\item Assisted in database collection and transition
+\end{list}
+
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r} \textbf{SAS
+    Institute, Inc.} & \textbf{Cary, NC} \\ \emph{R\&D Technical Student} &
+  May 2003-August 2003 \& May 2004-August 2005 \& August 2006-August 2008\\
+\end{tabular*}
+\begin{list}{$\bullet$}{\itemsep -5pt \topsep -\parskip}
+\item Documented statistical procedures available in SAS/STAT and
+  SAS/QC 
+\item Developed test programs for the experimental Bayesian procedures
+  in SAS/STAT
+\item Tested high level graphics software on various operating systems
+  including Windows, Unix, MVS, and OpenVMS
+\item Maintained company web site that provides technical information
+  on the statistical software products
+\item Lead group in effort to update software features on company
+  website
+\end{list}
+	
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+\textbf{University of North Carolina} & \textbf{Chapel Hill, NC} \\
+\emph{Research Assistant} & August 2005-August 2006 \\
+\end{tabular*}
+\begin{list}{$\bullet$}{\itemsep -5pt \topsep -\parskip}
+\item Consulted with North Carolina Urban Water Consortium for
+  drought planning
+\item Conducted research with Richard L. Smith and Lawrence E. Band to
+  derive new simulation approach for daily precipitation data
+\item Developed R package, {\texttt sircl}, to run simulations of
+  various scenarios
+\end{list}
+	
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+\textbf{University of North Carolina and Duke University} &
+\textbf{Chapel Hill, NC} \\ \emph{Research Assistant} & August 2003-May 2004 \\
+\end{tabular*}
+\begin{list}{$\bullet$}{\itemsep -5pt \topsep -\parskip}
+\item Conducted research with Richard L. Smith and Prasad S. Kasibhatla
+  on Carbon Monoxide (CO) inverse modeling
+\item Derived new statistical approach for multicollinearity involved
+  with source apportionment
+\item Developed spatial statistics R package, \texttt{RREML}, that
+  incorporates C and R internals to estimate spatial distributions
+  % \item Writing article for future submission to journal
+\end{list}
+	
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+\textbf{Baltimore, Lucas \& Co.} & \textbf{Newton, MA} \\ \emph{Staff
+Accountant} & July 1998-August 2000
+\end{tabular*}
+\begin{list}{$\bullet$}{\itemsep -5pt \topsep -\parskip}
+\item Junior level accountant, in charge of bank reconciliation,
+  corporate tax returns, payroll, estate planning and filing.
+%% \item Assisted corporate directors in management decisions, particularly
+%%   those with tax implications
+%% \item Compiled monthly, quarterly and annual financial statements
+%% \item Completed C-Corporate, S-Corporate and Partnership tax returns
+%% \item Reconciled and submitted small corporate retirement plans
+%% \item Planned, summarized and filed for Estates
+\end{list}
+	
+%% \begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+%%   \textbf{Morgan Stanley} & \textbf{Rochester, NY} \\ \emph{Sales
+%%     Internship} & September 1997 - December 1997 \\
+%% \end{tabular*}
+%% \begin{list}{$\bullet$}{\itemsep -5pt \topsep -\parskip}
+%% \item Implemented new sales marketing system
+%% \item Established continuous contact with active and inactive clients
+%% \end{list}
+
+\vspace{\secspace}
+
+%===================% %TEACHING EXPERIENCE% %===================%
+\begin{center} {\large \textbf{TEACHING EXPERIENCE}} \\
+\vspace{-10pt}{\centering \rule{1\columnwidth}{0.2pt}\par}
+\end{center}
+\vspace{-2pt}
+
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+  \textbf{University of North Carolina at Chapel Hill} & \textbf{Chapel
+    Hill, NC} \\ \emph{Teaching Fellow/Teaching Assistant for
+    Introductory Statistics} & August 2000-May 2003
+\end{tabular*}
+
+\begin{list}{$\bullet$}{\itemsep -5pt \topsep -\parskip}
+\item Received overwhelmingly positive reviews that led to
+  Department Teaching Award
+\item Instructor for over 5 courses with an average size of 40
+  students
+\item Designed and implemented course syllabus and lectures
+\item Created and graded student assignments and exams
+\end{list}
+	
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+\textbf{University of Rochester} & \textbf{Rochester, NY} \\
+\emph{Undergraduate Teaching Assistant} & September 1997-December
+1997
+\end{tabular*}
+
+\begin{list}{$\bullet$}{\itemsep -5pt \topsep -\parskip}
+\item Taught Recitation Class of approximately 40 students
+\item Assisted Professor in formulating of questions for exams and
+  assignments, and valuated weekly assignments and exams
+\end{list}
+
+\vspace{\secspace}
+
+%==============% %TECHNICAL SKILLS% %==============%
+\begin{center} {\large \textbf{TECHNICAL SKILLS}}\\
+\vspace{-10pt}{\centering \rule{1\columnwidth}{0.2pt}\par}
+\end{center}
+\vspace{-2pt}
+
+\begin{list}{$\bullet$}{\leftmargin 19pt \itemsep -5pt \topsep
+    -\parskip}
+\item R package development, including use of C and Fortran libraries
+\item UNC Dept. of Statistics and Operations Research Linux System
+  Administrator for 4 years
+\item Package maintainer for Emacs package \BJLhref{https://github.com/statmobile/pydoc}{pydoc}
+\item \emph{Operating systems}: AWS, Linux, OS X, Unix, Windows
+\item \emph{Scientific programs}: C, \LaTeX, Mathematica, Python, R,
+  SAS, S-Plus, SQL
+\item \emph{General computing}: Bash, GIT, Emacs, MS Office Suite,
+  Subversion
+\item \emph{Languages}: English and Spanish (attended University for
+  semster in Heredia, Costa Rica)
+\end{list}
+	
+\vspace{\secspace}
+
+%==============% %PAPERS% %==============%
+\begin{center} {\large \textbf{PAPERS}}\\
+\vspace{-10pt}{\centering \rule{1\columnwidth}{0.2pt}\par}
+\end{center}
+\vspace{-2pt}
+
+Robert Erhardt, Lawrence Band, Richard Smith and Brian
+Lopes. \textbf{Statistical Downscaling of Precipitation on a Spatially
+  Dependent Network Using a Regional Climate Model} \textit{Stochastic
+  Environmental Research Risk Assessment} (\BJLhref{http://link.springer.com/article/10.1007/s00477-014-0988-y}{link})
+
+%% \vspace{3pt}
+
+%% Brian J. Lopes, Richard L. Smith, Prasad S. Kasibhatla and Avelino
+%% F. Arellano, Jr.  \textbf{Top-down estimates of global carbon monoxide
+%%   sources incorporating spatial covariances}. \textit{In Progress}.
+
+\vspace{3pt}
+
+Brian J. Lopes and Richard L. Smith.  \textbf{A Ridge Restricted
+  Maximum Likelihood Approach to Spatial Models}. \textit{In Progress}
+
+\vspace{3pt}
+
+Brian J. Lopes.  \textbf{RREML: An R package for Ridge Restricted
+  Maximum Likelihood Estimation of Variances with a Known Structure}.
+\textit{In Progress}
+
+%===============% % PRESENTATIONS % %===============%
+\begin{center} {\large \textbf{PRESENTATIONS AND POSTERS}}\\
+\vspace{-10pt}{\centering \rule{1\columnwidth}{0.2pt}\par}
+\end{center}
+\vspace{-2pt}
+
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r} \textbf{The ISI
+    International Conference on Environmental Statistics and Health} &
+  July 2003\\ \textbf{Santiago de Compostela, Spain} &\\ \emph{Inverse
+    problems associated with source apportionment} &
+\end{tabular*}
+
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+  \textbf{Winter Workshop on Environmental and Environmental Health
+    Statistics} & January 2007\\ \textbf{Gainesville, FL} &\\
+  \emph{Stochastic precipitation models and simulations} &
+\end{tabular*}
+
+\vspace{\secspace}
+
+%%% %===================% %HONORS AND AWARDS % %===================%
+%%% \begin{center} {\large \textbf{HONORS AND AWARDS}}\\
+%%% \vspace{-10pt}{\centering \rule{1\columnwidth}{0.2pt}\par}
+%%% \end{center}
+%%% \vspace{-2pt}
+%%% 
+%%% \begin{list}{$\bullet$}{\leftmargin 19pt \itemsep -5pt \topsep
+%%%     -\parskip}
+%%% \item 2002 Statistics Department Teaching Award, University of North
+%%%   Carolina
+%%% \item Graduated with Distinction from the University of Rochester,
+%%%   1998
+%%% \item Dean's List, University of Rochester: Fall 1994, Spring 1996, Fall 1996, Spring 1997,
+%%%   Fall 1998
+%%% \end{list}
+%%% 
+%%% \vspace{\secspace}
+
+%==========% %STUDENT ACTIVITIES% %==========%
+\begin{center} {\large \textbf{STUDENT ACTIVITIES}}\\ \vspace{-10pt}{\centering
+\rule{1\columnwidth}{0.2pt}\par}
+\end{center}
+\vspace{-2pt}
+
+\begin{list}{$\bullet$}{\leftmargin 19pt \itemsep -5pt \topsep
+-\parskip}
+\item 2-year senator in Graduate and Professional Student Federation,
+member of Appropriations and Finance Committees
+\item Oversaw computational resources for UNC Department of Statistics and
+Operations Research for 3 years
+\item Semester abroad in Heredia, Costa Rica
+%\item Active role in Sigma Alpha Mu fraternity, Mu Rho chapter
+\end{list}
+
+
+\vspace{\secspace}
+
+%% %==========%
+%% %REFERENCES%
+%% %==========%
+%%  	\begin{center}
+%%  		{\bf \emph{References Available Upon Request}}
+%%  	\end{center}
+
+
+\end{document}
